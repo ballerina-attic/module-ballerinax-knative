@@ -15,14 +15,15 @@ Annotation based Knative extension implementation for ballerina.
 
 
 |**Annotation Name**|**Description**|**Default value**|
+|--|--|--|
 |dockerHost|Docker host IP and docker PORT|`"unix:///var/run/docker.sock"` for Unix.`"npipe:////./pipe/docker_engine"` for Windows 10|
-|dockerCertPath - Docker certificate path.|"DOCKER_CERT_PATH" environment variable|
+|dockerCertPath|Docker certificate path.|"DOCKER_CERT_PATH" environment variable|
 |registry|Docker registry url|null|
 |username|Username for docker registry|null|
 |password|password for docker registry|null|
 |baseImage|Base image for docker image building|"ballerina/thin-base::<BALLERINA_VERSION>"|
 |image|Docker image name with tag.|Default is `"<OUTPUT_FILE_NAME>:latest"`|
-|buildImage - Docker image to be build or not|`true`|
+|buildImage|Docker image to be build or not|`true`|
 |push|Enable pushing docker image to registry|`false`|
 |copyFiles|Array of External files for docker image|null|
 |singleYAML|Generate a single yaml file with all kubernetes artifacts|true|
