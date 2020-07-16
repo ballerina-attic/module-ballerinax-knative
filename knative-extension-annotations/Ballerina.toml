@@ -1,0 +1,5 @@
+[project]
+org-name = "ballerinax"
+version = "1.0.0"
+
+[dependencies]
